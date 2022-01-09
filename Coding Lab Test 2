@@ -25,8 +25,9 @@ public class Lab2 {
 			commission = (sale*5)/100;
 			totalwage = hour * wages;
 			dailywage = totalwage + commission;
-			System.out.print("The total commission you got : RM" + commission);
-			System.out.print("The total of daily wages you got : RM" + dailywage);
+			System.out.println("The total commission you got : RM" + commission);
+			System.out.println();
+			System.out.println("The total of daily wages you got : RM" + dailywage);
 			
 		}
 		
