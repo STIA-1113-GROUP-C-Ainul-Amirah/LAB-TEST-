@@ -1,0 +1,54 @@
+package labTest;
+
+import java.util.Scanner;
+
+public class Lab2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanMe = new Scanner (System.in);
+		
+		int sale;
+		int hour;
+		double commission;
+		double wages = 5.00;
+		double totalwage;
+		double dailywage;
+		
+		System.out.print("Enter sales : RM ");
+		sale = scanMe.nextInt();
+		
+		System.out.print("Enter worked Hours : ");
+		hour = scanMe.nextInt();
+		
+		if ((sale >= 150) && (sale <=300)) {
+			commission = (sale*5)/100;
+			totalwage = hour * wages;
+			dailywage = totalwage + commission;
+			System.out.print("The total commission you got : RM" + commission);
+			System.out.print("The total of daily wages you got : RM" + dailywage);
+			
+		}
+		
+		if ((sale >= 301) && (sale <=500)) {
+			commission = (sale*10)/100;
+			totalwage = hour * wages;
+			dailywage = totalwage + commission;
+			System.out.println("Total commission received: RM" + commission);
+			System.out.println("Total of daily received : RM" + dailywage);
+			
+		}
+		
+		else if (sale >= 500) {
+			commission = (sale*15)/100;
+			totalwage = hour * wages;
+			dailywage = totalwage + commission;
+			System.out.println("The total commission you got : RM" + commission);
+			System.out.println("The total of daily wages you got : RM" + dailywage);
+		}
+		
+		
+
+	}
+
+}
